@@ -42,9 +42,12 @@ const getFormattedDate = () => {
 const downloadScreenshot = async () => {
   const date = getFormattedDate()
   const width = window.innerWidth
-  const height = (width / 16) * 9
+  const real = document.getElementById('real')!
+  const height = real.offsetHeight
 
-  const dataUrl = await toPng(document.getElementById('screenshot')!, {
+  const screenshot = document.getElementById('screenshot')!
+
+  const dataUrl = await toPng(screenshot, {
     width: width,
     height: height,
     canvasHeight: height,

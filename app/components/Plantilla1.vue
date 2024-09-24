@@ -23,7 +23,10 @@ defineProps<{ persona: Persona }>()
         />
       </div>
       <div class="bg-yellow-50 flex text-center items-center text-yellow-950">
-        <div class="flex flex-col justify-between h-full md:py-20 py-4 px-8">
+        <div
+          class="flex flex-col justify-between h-full md:py-20 py-4 px-8"
+          id="real"
+        >
           <div>
             <h1
               class="md:text-3xl text-xs"
