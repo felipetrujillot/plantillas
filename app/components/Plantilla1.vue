@@ -51,7 +51,7 @@ defineProps<{ persona: Persona }>()
               {{ persona.apellido_materno }}
             </h1>
 
-            <h2 class="md:text-2xl text-sm">
+            <h2 class="md:text-2xl text-xs">
               {{ persona.fecha_nacimiento }} /
               {{ persona.fecha_fallecimiento }}
             </h2>

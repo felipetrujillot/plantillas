@@ -139,7 +139,6 @@ const docHandler = ($event: Event) => {
             ref="documentUpload"
             @change="docHandler"
             accept="image/*"
-            capture
           />
 
           <img
