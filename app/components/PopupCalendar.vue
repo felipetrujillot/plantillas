@@ -44,7 +44,7 @@ const newDate = computed(() => {
   return ''
 })
 
-const dateCalendar = ref('')
+const dateCalendar = ref(getStartDate())
 </script>
 
 <template>
