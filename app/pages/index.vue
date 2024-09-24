@@ -7,21 +7,15 @@ useHead({
 })
 
 const persona = ref({
-  nombre: 'Felipe',
-  apellido_paterno: 'Trujillo',
-  apellido_materno: 'Triviños',
+  nombre: '',
+  apellido_paterno: '',
+  apellido_materno: '',
   fecha_nacimiento: '01-01-2000',
-  fecha_fallecimiento: '01-01-2000',
-  nombre_familia: 'Familia Trujillo Henriquez',
-  mensaje_familia: `
-    <p>
-    El mejor consuelo durante nuestro duelo fue el sentirnos acompañados por todos ustedes
-    </p>
-    <p>Apreciamos profundamente su cariño.</p>
-    `,
+  fecha_fallecimiento: '',
+  nombre_familia: '',
+  mensaje_familia: '',
   imagen: '',
 })
-
 /**
  *
  * @returns
