@@ -56,7 +56,6 @@ defineProps<{ persona: Persona }>()
               </h2>
             </div>
           </div>
-          <!-- <TipTap /> -->
         </div>
       </div>
     </div>

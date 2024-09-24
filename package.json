@@ -10,13 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@tiptap/extension-placeholder": "^2.7.2",
     "@tiptap/pm": "^2.7.2",
     "@tiptap/starter-kit": "^2.7.2",
     "@tiptap/vue-3": "^2.7.2",
     "@vueuse/core": "^11.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "dom-to-image-more": "^3.4.5",
     "html-to-image": "^1.11.11",
     "lucide-vue-next": "^0.445.0",
     "nuxt": "^3.13.0",
