@@ -72,7 +72,7 @@ const docHandler = ($event: Event) => {
 </script>
 
 <template>
-  <div class="fixed z-10 flex justify-center w-full items-end">
+  <div class="fixed z-10 flex justify-center bottom-0 w-full items-end">
     <div class="flex gap-4 py-4">
       <Button :disabled="view === 'form'" @click.prevent="view = 'form'">
         Volver
@@ -153,9 +153,6 @@ const docHandler = ($event: Event) => {
             :src="persona.imagen"
             v-if="persona.imagen.length > 1"
           />
-        </div>
-        <div class="text-end">
-          <Button @click.prevent="view = 'plantilla_1'">Continuar</Button>
         </div>
       </Card>
     </div>
