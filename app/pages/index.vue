@@ -7,13 +7,18 @@ useHead({
 })
 
 const persona = ref({
-  nombre: '',
-  apellido_paterno: '',
-  apellido_materno: '',
+  nombre: 'Felipe',
+  apellido_paterno: 'Trujillo',
+  apellido_materno: 'Triviños',
   fecha_nacimiento: '01-01-2000',
-  fecha_fallecimiento: '',
-  nombre_familia: '',
-  mensaje_familia: '',
+  fecha_fallecimiento: '01-01-2000',
+  nombre_familia: 'Familia Trujillo Henriquez',
+  mensaje_familia: `
+    <p>
+    El mejor consuelo durante nuestro duelo fue el sentirnos acompañados por todos ustedes
+    </p>
+    <p>Apreciamos profundamente su cariño.</p>
+    `,
   imagen: '',
 })
 
@@ -37,7 +42,7 @@ const getFormattedDate = () => {
 const downloadScreenshot = async () => {
   const date = getFormattedDate()
   const width = window.innerWidth
-  const height = window.innerHeight
+  const height = (width / 16) * 9
 
   const dataUrl = await toPng(document.getElementById('screenshot')!, {
     width: width,
@@ -79,7 +84,7 @@ const docHandler = ($event: Event) => {
     v-if="view === 'form'"
     class="flex min-w-screen min-h-screen bg-neutral-100"
   >
-    <div class="container-sm w-full h-full my-16">
+    <div class="container-sm w-full h-full my-16 px-2">
       <Card class="space-y-4">
         <h1 class="text-2xl font-bold">Datos personales</h1>
         <div class="space-y-1">
@@ -141,10 +146,13 @@ const docHandler = ($event: Event) => {
           />
 
           <img
-            class="w-20 h-20"
+            class="w-20 h-20 mt-4"
             :src="persona.imagen"
             v-if="persona.imagen.length > 1"
           />
+        </div>
+        <div class="text-end">
+          <Button @click.prevent="view = 'plantilla_1'">Continuar</Button>
         </div>
       </Card>
     </div>
